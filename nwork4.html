@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ishitazPortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Consistent font across the site */
+        body {
+            font-family: 'LemonDays', sans-serif;
+        }
+
+        /* Navbar styling */
+        .navbar-custom {
+            width: 80%;
+            margin: auto;
+            padding: 1rem;
+            border: 2px solid black;
+            border-radius: 48px;
+            background-color: transparent;
+        }
+
+        .navbar {
+            margin-top: 20px;
+        }
+
+        .navbar-brand {
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: #6C34D3;
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #6C34D3;
+        }
+        
+        /* Content Section */
+        .content-container {
+            margin-left: 128px; /* Adds space from the left */
+            margin-top: 48px; /* Reduces space between navbar and content */
+            margin-bottom: 48px;
+            text-align: start; /* Left-align the text */
+        }
+
+        /* Center text on smaller screens */
+        @media (max-width: 991px) {
+            .content-container {
+                text-align: start; /* Center-align text on medium and small screens */
+                margin-left: 16px;
+            }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+        body {
+            margin-bottom: 50px;
+        }
+        .image img {
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure proper fit without distortion */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 64px;
+        }
+        .animation {
+            display: flex; /* Use flexbox to center the video */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            padding: 64px; /* Add space around the video */
+        }
+        .animation video {
+            width: 80%; /* Set width for video */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .row img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures cropping */
+        }
+        /* Ensuring last right image height doesn't exceed the left image */
+        .last-row img {
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.instagram.com/design_ishh/">DESIGNISH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <h1>NIKE AD CAMPAIGN | FITSYNC</h1>
+        <p>
+            The Fit Sync Challenge is a partnership between Nike and Spotify, 
+            aims to build fitness <br> habit by integrating 21 days fitness Challenge on the launch of
+            Infinity shoes series.<br>Through exciting Rewards and dynamic imagery and compelling messaging, 
+            the design<br> should inspire participants to embrace a healthier lifestyle.
+        </p>
+        
+        <ul class="list-unstyled">
+            <li><strong>Objective:</strong> Build a fitness habit through a 21-day fitness challenge in partnership with Spotify Nike's Infinity shoes launch.</li>
+            <li><strong>Concept:</strong> Active individuals seeking motivation and habit-building in their workouts.</li>
+            <li><strong>Role:</strong> Created dynamic visuals and messaging that reflect the collaboration between Nike and Spotify</li>
+            <li><strong>Key Message:</strong> Designed a campaign that promotes fitness and enjoyment through music, driving participation and engagement.</li>
+            <li><strong>Outcome:</strong> Design a campaign</li>
+            <li><strong>Tools Used:</strong> Adobe Illustrator, Adobe Photoshop, InDesign</li>
+        </ul>
+    </div>
+
+    <!-- Image Section -->
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <img src="img/fitmockup.png" alt="Oreo Campaign Visual" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="img/nike.png" alt="Oreo Campaign Visual" class="img-fluid">
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="img/manys.png" alt="Oreo Campaign Visual" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="img/phone mock.png" alt="Oreo Campaign Visual" class="img-fluid">
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="img/spotifylogo.png " alt="Oreo Campaign Visual" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Last row with images -->
+        <div class="row last-row">
+            <div class="col-md-6 mb-4">
+                <img src="img/justdo.png" alt="Oreo Campaign Visual" class="img-fluid">
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="img/pmock1.png" alt="Oreo Campaign Visual" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
